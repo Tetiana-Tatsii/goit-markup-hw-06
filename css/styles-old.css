@@ -7,6 +7,15 @@
 
 
 
+
+
+
+
+.order-btn:hover, 
+.order-btn:focus{
+background-color: #404bbf;
+}
+
 /* features */
 
 .features-section{
