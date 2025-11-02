@@ -1353,4 +1353,8 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
         width: 408px;
         padding: 72px 24px 24px;
     }
+        .modal-form-icon {
+            width: 18px;
+            height: 18px;
+        }
 }
