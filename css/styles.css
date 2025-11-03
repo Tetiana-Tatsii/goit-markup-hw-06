@@ -33,7 +33,7 @@ a {
 
 img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -231,6 +231,7 @@ button {
 }
 }
 
+
 @media screen and (min-width: 1158px) {
     .header-logo {
         margin-right: 76px;
@@ -366,6 +367,9 @@ button {
     color: #404bbf;
 }
 
+.menu-contacts {
+margin-bottom: 48px;
+}
 .mob-menu-contacts {
     padding: 0;
     margin: 0;
@@ -373,7 +377,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
 }
 
 .mob-menu-contacts a {
@@ -384,6 +387,10 @@ button {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #434455;
+}
+
+.contacts-link {
+    font-style: normal;
 }
 
 .mob-social-list {
@@ -445,6 +452,7 @@ button {
     max-width: 320px;
     margin: 0 auto;
 }
+
 
 /* === TITLE === */
 .hero-title {
@@ -568,7 +576,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     background-color: #eee;
 }
 
-/* features */
+
 
 /* === FEATURES === */
 .features-section {
@@ -596,15 +604,17 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 }
 
 .feature-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
 }
 
 .feature-text {
+    text-align: left;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -653,13 +663,19 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
         background-color: #f4f4fd;
         margin-bottom: 8px;
     }
+
+        .feature-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+        }
 }
+
 
 /* TEAM SECTION */
 .team-section {
     background-color: #f4f4fd;
     padding: 96px 0;
-    /* mobile */
 }
 
 .team-list {
@@ -667,7 +683,6 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 72px;
-    /* mobile gap */
 }
 
 .team-member {
@@ -716,9 +731,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
 /* ========== TEAM TYPOGRAPHY ========== */
 .member-name {
-    /* від фото до імені */
     margin-bottom: 8px;
-    /* від імені до ролі */
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -747,13 +760,6 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
     .team-list {
         gap: 64px 24px;
-        /* between rows / columns */
-    }
-
-    .team-member {
-        width: calc((100% - 24px) / 2);
-        /* 2 items */
-        max-width: none;
     }
 }
 
@@ -779,7 +785,6 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 .portfolio {
     background-color: #ffffff;
     padding: 96px 0;
-    /* mobile */
 }
 
 .portfolio-list {
@@ -787,13 +792,11 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 48px;
-    /* mobile gap */
 }
 
 .portfolio-item {
     width: 100%;
     max-width: 288px;
-    /* as mentor required */
     background-color: #ffffff;
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -825,6 +828,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 }
 
 .portfolio-card {
+    text-align: left;
     padding: 32px 16px;
 }
 
@@ -833,13 +837,11 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
 }
 
 .portfolio-text {
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     color: #434455;
 }
 
@@ -852,13 +854,11 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
     .portfolio-list {
         gap: 72px 24px;
-        /* mentor says 72 on tablet */
     }
 
     .portfolio-item {
         width: calc((100% - 24px) / 2);
         max-width: none;
-        /* shadow stays ON on tablet */
     }
 }
 
@@ -871,17 +871,14 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
     .portfolio-list {
         gap: 48px 24px;
-        /* back to 48 horizontally */
     }
 
     .portfolio-item {
         width: calc((100% - 48px) / 3);
-        /* remove default shadow */
         box-shadow: none;
     }
 
     .portfolio-item:hover {
-        /* shadow only on hover desktop */
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -895,6 +892,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 }
 
 .footer-container {
+    padding: 0 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1037,13 +1035,12 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
     .container {
             max-width: 768px;
-            padding-left: 108px;
-            padding-right: 108px;
         }
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;  
+        justify-content: flex-start;
+        align-items: baseline;  
     }
 
     .footer-logo-wrapper {
@@ -1056,10 +1053,17 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
         margin-bottom: 0;
     }
 
+.social-text {
+    text-align: left;
+}
+
     .footer-subscribe {
         max-width: 453px;
         margin-top: 72px;
     }
+.subscribe-title {
+    text-align: left;
+}
 
     .subscribe-form {
         flex-direction: row;
@@ -1079,17 +1083,24 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 @media (min-width: 1158px) {
 .container {
         max-width: 1158px;
-        padding: 100px 0;
+        padding: 0 15px;
     }
     .page-footer {
         padding: 100px 0;
     }
 
     .footer-container {
-        align-items: flex-start;
-        flex-wrap: nowrap;
-        gap: 120px;
-    }
+            display: flex;
+            align-items: baseline;
+        }
+
+    .footer-logo-wrapper {
+            margin-right: 120px;
+        }
+
+        .footer-social-wrapper {
+            margin-right:auto;
+        }
 
     .footer-subscribe {
         margin-top: 0;
